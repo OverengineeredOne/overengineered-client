@@ -4,18 +4,17 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+chrono = { version = "0.4", features = ["wasmbind"] }
+gloo = "0.6"
+gloo-utils = "0.1"
+log = "0.4"
+patternfly-yew = "0.1.1"
+strum = "0.19"
+yew = "0.19"
+yew-router = { version = "0.16", package = "yew-router-nested" }
 wasm-bindgen = "0.2.79"
 wasm-logger = "0.2"
 
-yew = "0.19"
-yew-router = { version = "0.16", package = "yew-router-nested" }
-gloo-utils = "0.1"
-
-chrono = { version = "0.4", features = ["wasmbind"] }
-
-patternfly-yew = "0.1.1"
-
-strum = "0.19"
-
-log = "0.4"
-
+# Patch is to be applied at workspace root
+#[patch.crates-io]
+#patternfly-yew = { path = "../../../patternfly-yew" }

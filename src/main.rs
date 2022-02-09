@@ -2,9 +2,7 @@
 
 mod app;
 mod components;
-mod counter;
 mod example;
-mod full;
 mod index;
 mod layouts;
 
